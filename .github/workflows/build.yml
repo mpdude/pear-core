@@ -42,6 +42,7 @@ jobs:
           pear config-set umask 0022
           sudo pear config-set umask 0022 system
 
+      - run: php -i 
       - name: Run tests
         run: |
           umask 0022
